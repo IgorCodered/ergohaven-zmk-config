@@ -35,6 +35,11 @@
             key-positions = <3 4>;
             layers = <0>;
         };
+
+        sync {
+            bindings = <&tog 1>;
+            key-positions = <4 5>;
+        };
     };
 
     macros {
