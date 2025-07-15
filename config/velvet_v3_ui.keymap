@@ -28,6 +28,20 @@
             bindings = <&kp LG(SPACE)>;
             key-positions = <27 28>;
         };
+
+        combo_idea {
+            bindings = <&mo 8>;
+            key-positions = <19 20>;
+        };
+    };
+
+    macros {
+        left_browse: left_browse {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(TAB))>;
+            label = "LEFT_BROWSE";
+        };
     };
 
     keymap {
@@ -46,10 +60,10 @@
 
         Navigation {
             bindings = <
-&trans  &kp N1  &kp N2    &kp N3   &kp N4   &kp N5                     &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &trans
-&trans  &trans  &trans    &trans   &trans   &kp RET                    &trans    &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
-&trans  &trans  &kp HOME  &kp INS  &kp END  &kp DEL                    &kp CLCK  &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &trans
-                &trans    &trans   &trans   &trans   &trans    &trans  &mo 3     &trans        &trans         &trans
+&trans  &kp N1           &kp N2    &kp N3   &kp N4       &kp N5                     &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &trans
+&trans  &kp LS(LC(TAB))  &trans    &trans   &kp LC(TAB)  &kp RET                    &trans    &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
+&trans  &trans           &kp HOME  &kp INS  &kp END      &kp DEL                    &kp CLCK  &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &trans
+                         &trans    &trans   &trans       &trans   &trans    &trans  &mo 3     &trans        &trans         &trans
             >;
 
             display-name = "Navigation";
@@ -115,15 +129,15 @@
             display-name = "User0";
         };
 
-        User1 {
+        IDEA {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans            &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LA(NUMBER_0)  &kp LA(NUMBER_1)  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans            &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans            &trans            &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
-            display-name = "User1";
+            display-name = "IDEA";
         };
 
         User2 {
