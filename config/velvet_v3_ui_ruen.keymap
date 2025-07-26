@@ -186,7 +186,7 @@
         IDEA {
             bindings = <
 &trans  &trans  &trans  &trans  &kp LC(LS(GRAVE))  &kp LA(NUMBER_0)                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp LA(N1)         &kp LS(N)                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LA(N1)         &kp LS(FSLH)                        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans             &kp LA(INSERT)                      &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans             &trans            &trans    &trans  &trans  &trans  &trans  &trans
             >;
