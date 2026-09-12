@@ -40,6 +40,12 @@
             key-positions = <3 4>;
             layers = <0>;
         };
+
+        braches {
+            bindings = <&kp LS(A)>;
+            key-positions = <16>;
+            layers = <9>;
+        };
     };
 
     macros {
@@ -196,6 +202,15 @@
             >;
 
             display-name = "Sniper";
+        };
+
+        IDEA_git {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
