@@ -46,6 +46,11 @@
             key-positions = <16>;
             layers = <9>;
         };
+
+        Navigation_layer {
+            bindings = <&mo 9>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {
