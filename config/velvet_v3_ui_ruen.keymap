@@ -50,6 +50,8 @@
         Navigation_layer {
             bindings = <&mo 9>;
             key-positions = <19 20>;
+            layers = <1 0>;
+            timeout-ms = <30>;
         };
     };
 
@@ -211,10 +213,10 @@
 
         IDEA_git {
             bindings = <
-&trans  &trans  &trans  &trans           &trans               &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp KP_NUMBER_2  &kp LC(KP_NUMBER_1)  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans           &trans               &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans           &trans               &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans               &trans               &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LC(KP_NUMBER_2)  &kp LC(KP_NUMBER_1)  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans               &trans               &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans               &trans               &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
