@@ -209,10 +209,10 @@
 
         IDEA_git {
             bindings = <
-&trans  &trans  &trans  &trans      &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LC(N2)  &kp LC(N1)  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans      &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &trans      &trans      &trans                         &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(NUMBER_3)        &kp LC(N6)  &kp LC(N2)  &kp LC(N1)                     &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(RU_CYRILLIC_HA)  &kp LC(O)   &kp LC(Y)   &kp LC(RU_CYRILLIC_HARD_SIGN)  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans      &trans      &trans                         &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
