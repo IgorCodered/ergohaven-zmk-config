@@ -9,23 +9,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    behaviors {
-        mouse_layer: mouse_layer {
-            compatible = "zmk,behavior-sticky-key";
-            label = "MOUSE_LAYER";
-            bindings = <&mo>;
-            #binding-cells = <1>;
-            release-after-ms = <200>;
-        };
-
-        zip_auto_mouse: zip_auto_mouse {
-            compatible = "zmk,input-processor-temp-layer";
-            #input-processor-cells = <2>;
-            require-prior-idle-ms = <800>;
-            excluded-positions = <>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -42,7 +25,7 @@
         };
 
         Navigation_layer {
-            bindings = <&mo 9>;
+            bindings = <&mo 7>;
             key-positions = <19 20>;
             layers = <1 0>;
             timeout-ms = <50>;
@@ -134,7 +117,7 @@
         nav {
             bindings = <
 &trans  &kp N1  &kp N2    &kp N3    &kp N4    &kp N5                     &kp N6    &kp N7        &kp N8         &kp N9       &kp N0         &trans
-&trans  &mo 7   &mkp MB3  &mkp MB2  &mkp MB1  &kp RET                    &trans    &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
+&trans  &mo 6   &mkp MB3  &mkp MB2  &mkp MB1  &kp RET                    &trans    &kp LEFT      &kp DOWN       &kp UP       &kp RIGHT      &trans
 &trans  &trans  &kp HOME  &kp INS   &kp END   &kp DEL                    &kp CLCK  &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &trans
                 &trans    &trans    &trans    &trans   &trans    &trans  &mo 5     &trans        &trans         &trans
             >;
@@ -174,17 +157,6 @@
             display-name = "Adjust";
         };
 
-        mouse {
-            bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &mo 7   &mkp MB3  &mkp MB2  &mkp MB1  &mo 8                     &mo 8   &mkp MB1  &mkp MB2  &mkp MB3  &mo 7   &trans
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
-            >;
-
-            display-name = "Mouse";
-        };
-
         scroll {
             bindings = <
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
@@ -194,17 +166,6 @@
             >;
 
             display-name = "Scroll";
-        };
-
-        sniper {
-            bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
-            >;
-
-            display-name = "Sniper";
         };
 
         IDEA_git {
@@ -224,15 +185,10 @@
     input-processors = <&zip_xy_scaler 9 20>;
 
     scroller {
-        layers = <7>;
+        layers = <6>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_xy_scaler 1 32>,
             <&zip_xy_to_scroll_mapper>;
-    };
-
-    sniper {
-        layers = <8>;
-        input-processors = <&zip_xy_scaler 1 4>;
     };
 };
